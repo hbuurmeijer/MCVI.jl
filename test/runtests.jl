@@ -37,19 +37,27 @@ include("test_updater.jl")
 
 include("test_belief.jl")
 
+println("---Testing dummay graph 1---")
 @test test_dummy_graph()
+
+println("---Testing dummy graph 2---")
 @test test_dummy_graph2()
 
+println("---Testing backup---")
 @test test_backup()
 
+println("---Testing belief---")
 @test test_belief()
 
+println("---Testing solve---")
 include("test_solve.jl")
 @test test_solve()
 
+println("---Testing simulation---")
 include("test_simulation.jl")
 test_simulation()
 
+println("---Testing requirements---")
 include("test_requirements.jl")
 test_requirements()
 
